@@ -1,4 +1,4 @@
-import csv
+#import csv
 
 #base class for all files
 #standard for all csv file
@@ -29,4 +29,7 @@ class StudentFileData(CSVHandler):
     def update_student(student_id):
         pass
 
+class CourseFileData(CSVHandler):
+    def __init__ (self):
+        self().__init__("courses.csv")
 
