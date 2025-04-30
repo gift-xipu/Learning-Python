@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Fitness Calculator</title>
+  </head>
+  <body>
+    <h1>Fitness Calculator</h1> 
+    <form method="post">
+      <label for="gender">Gender</label>
+      <input type="text" name="gender" required><br>
+
+      <label for="age">Age</label>
+      <input type="text" name="age" required><br>
+
+      <label for="height">Height (in meters)</label>
+      <input type="text" name="height" required><br>
+
+      <label for="weight">Weight (in kilograms)</label>
+      <input type="text" name="weight" required><br>
+
+      <button type="submit">Add</button>
+    </form>
+
+    <p>BMI: {{ bmi }}</p>
+    <p>BMR: {{ bmr }}</p>
+  </body>  
+</html>
